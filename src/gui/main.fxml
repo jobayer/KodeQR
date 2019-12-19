@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+    <AnchorPane fx:id="anchorPaneBtnHolder" layoutX="333.0" layoutY="28.0" prefHeight="344.0" prefWidth="253.0"
+                style="-fx-background-color: white; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="28.0"
+                AnchorPane.leftAnchor="335.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="28.0">
+        <JFXButton fx:id="btnSaveAs" disable="true" focusTraversable="false" layoutX="77.0" layoutY="214.0"
+                   onAction="#onButtonDefaultEvent" text="Save As Image" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="15.0"/>
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="btnGenerateQRCode" disable="true" focusTraversable="false" layoutX="63.0" layoutY="120.0"
+                   onAction="#onButtonDefaultEvent" text="Generate QR Code" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="15.0"/>
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="btnCloseApp" focusTraversable="false" layoutX="92.0" layoutY="261.0"
+                   onAction="#onButtonDefaultEvent" text="Close App" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="15.0"/>
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="btnGenerateQRCodeAgain" disable="true" focusTraversable="false" layoutX="73.0" layoutY="167.0"
+                   onAction="#onButtonDefaultEvent" text="Generate Again" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="15.0"/>
+            </font>
+        </JFXButton>
+        <Text fx:id="txtAppName" layoutX="73.0" layoutY="72.0" onMouseClicked="#onMouseClickedEvent"
+              strokeType="OUTSIDE" strokeWidth="0.0"
+              style="-fx-fill: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);"
+              text="KodeQR" textAlignment="CENTER">
+            <font>
+                <Font size="36.0"/>
+            </font>
+        </Text>
+    </AnchorPane>
+    <Pane fx:id="paneTextArea" prefHeight="370.0" prefWidth="360.0"
+          style="-fx-background-color: white; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="14.0"
+          AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="240.0" AnchorPane.topAnchor="14.0">
+        <JFXTextArea fx:id="taInputText" focusColor="WHITE" focusTraversable="false" layoutX="23.0" layoutY="24.0"
+                     prefHeight="321.0" prefWidth="311.0" unFocusColor="WHITE">
+            <font>
+                <Font name="Calibri" size="16.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="TEXT"/>
+            </cursor>
+        </JFXTextArea>
+    </Pane>
+    <Pane fx:id="paneImageView" layoutX="14.0" layoutY="14.0" prefHeight="370.0" prefWidth="360.0"
+          style="-fx-background-color: white; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="14.0"
+          AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="240.0" AnchorPane.topAnchor="14.0">
+        <ImageView fx:id="qrImgView" fitHeight="320.0" fitWidth="320.0" layoutX="13.0" layoutY="26.0"
+                   pickOnBounds="true" preserveRatio="true"/>
+    </Pane>
+    <Pane fx:id="paneInputBtn" layoutX="374.0" layoutY="156.0" prefHeight="370.0" prefWidth="360.0"
+          style="-fx-background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); -fx-background-radius: 1em;"
+          AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="240.0"
+          AnchorPane.topAnchor="14.0">
+        <JFXButton fx:id="btnInputText" defaultButton="true" focusTraversable="false" layoutX="45.0" layoutY="164.0"
+                   onAction="#onButtonDefaultEvent" text="Click Here To Input Text" textAlignment="CENTER"
+                   textFill="#fffefe">
+            <font>
+                <Font name="System Bold" size="20.0"/>
+            </font>
+        </JFXButton>
+        <Label fx:id="developerName" layoutX="78.0" layoutY="343.0" onMouseClicked="#onMouseClickedEvent"
+               text="Developed By Jobayer" textAlignment="CENTER" textFill="#c5c5c5">
+            <font>
+                <Font size="10.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Label>
+        <Text fill="#c4c4c4" layoutX="184.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="|"/>
+        <Label fx:id="appSourceUrl" layoutX="195.0" layoutY="343.0" onMouseClicked="#onMouseClickedEvent"
+               text="Get Source" textAlignment="CENTER" textFill="#c4c4c4">
+            <font>
+                <Font size="10.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Label>
+    </Pane>
+</AnchorPane>
