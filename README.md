@@ -16,4 +16,6 @@ A Beautiful Open Source QR Code Generator Written In Java. It is made with minim
 * [ZXing](https://github.com/zxing/zxing "ZXing On GitHub") is the library to generate QR code
 * [JFoenix](https://github.com/jfoenixadmin/JFoenix "JFoenix On GitHub") is the component's GUI library
 
+__**Get the jar file [here](https://github.com/jobayer/KodeQR/raw/master/out/artifacts/KodeQRJar/KodeQR.jar).__
+
 __**[Get it](https://jobayr.com/project/KodeQR) on my personal website.__
