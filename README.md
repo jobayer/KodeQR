@@ -18,4 +18,4 @@ A Beautiful Open Source QR Code Generator Written In Java. It is made with minim
 
 __**Get the jar file [here](https://github.com/jobayer/KodeQR/raw/master/out/artifacts/KodeQRJar/KodeQR.jar).__
 
-__**[Get it](https://jobayr.com/project/KodeQR) on my personal website.__
+__**[Get it](https://jobayr.com/project/kodeqr) on my personal website.__
